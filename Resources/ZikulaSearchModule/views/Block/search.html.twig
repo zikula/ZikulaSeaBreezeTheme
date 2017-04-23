@@ -9,12 +9,6 @@
     {{ form_row(form.searchOrder) }}
     {{ form_row(form.modules) }}
 </div>
-<div class="hidden">
-    {# @deprecated remove at Core-2.0 #}
-    {% for plugin, pluginOption in pluginOptions %}
-        {{ pluginOption|raw }}
-    {% endfor %}
-</div>
 {% set moduleVariables = zikulasearchmodule_searchVarToFieldNames() %}
 {% for name, value in moduleVariables %}
     <input type="hidden" name="{{ name|e('html_attr') }}" value="{{ value|e('html_attr') }}" />
