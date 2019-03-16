@@ -1,5 +1,9 @@
 services:
-    zikula_seabreeze_theme.twig.seabreezetheme_extension:
-        class: Zikula\SeaBreezeTheme\Twig\SeaBreezeThemeExtension
-        tags:
-            - { name: twig.extension }
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Zikula\SeaBreezeTheme\:
+        resource: '../../*'
+        exclude: '../../{bootstrap.php,Tests,vendor}'
