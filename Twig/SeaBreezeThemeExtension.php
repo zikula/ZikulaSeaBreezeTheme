@@ -21,7 +21,7 @@ class SeaBreezeThemeExtension extends AbstractExtension
     public function getFilters()
     {
         return [
-            new TwigFilter('urldecode', [$this, 'urldecode'], ['is_safe' => ['html']]),
+            new TwigFilter('urldecode', [$this, 'urldecode'], ['is_safe' => ['html']])
         ];
     }
 
