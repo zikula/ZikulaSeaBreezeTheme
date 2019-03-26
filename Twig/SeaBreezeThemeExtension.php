@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of the Zikula package.
  *
@@ -11,24 +13,19 @@
 
 namespace Zikula\SeaBreezeTheme\Twig;
 
-class SeaBreezeThemeExtension extends \Twig_Extension
-{
-    public function __construct()
-    {
-    }
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
 
+class SeaBreezeThemeExtension extends AbstractExtension
+{
     public function getFilters()
     {
         return [
-            new \Twig_SimpleFilter('urldecode', [$this, 'urldecode'], ['is_safe' => ['html']]),
+            new TwigFilter('urldecode', [$this, 'urldecode'], ['is_safe' => ['html']]),
         ];
     }
 
-    /**
-     * @param $string
-     * @return string
-     */
-    public function urldecode($string)
+    public function urldecode(string $string): string
     {
         return urldecode($string);
     }
