@@ -2,31 +2,31 @@
 # ZikulaSeaBreezeTheme config
 ##
 admin:
-  page: ":admin.html.twig"
+  page: "admin.html.twig"
   block:
     positions:
-      topnav: "Block:topnavblock.html.twig"
-      search: "Block:searchblock.html.twig"
+      topnav: "Block/topnavblock.html.twig"
+      search: "Block/searchblock.html.twig"
 home:
-  page: ":home.html.twig"
+  page: "home.html.twig"
   block:
     positions:
-      left: "Block:lsblock.html.twig"
-      right: "Block:rsblock.html.twig"
-      center: "Block:ccblock.html.twig"
-      topnav: "Block:topnavblock.html.twig"
-      search: "Block:searchblock.html.twig"
+      left: "Block/lsblock.html.twig"
+      right: "Block/rsblock.html.twig"
+      center: "Block/ccblock.html.twig"
+      topnav: "Block/topnavblock.html.twig"
+      search: "Block/searchblock.html.twig"
 master:
-  page: ":master.html.twig"
+  page: "master.html.twig"
   block:
     positions:
-      left: "Block:lsblock.html.twig"
-      right: "Block:rsblock.html.twig"
-      topnav: "Block:topnavblock.html.twig"
-      search: "Block:searchblock.html.twig"
+      left: "Block/lsblock.html.twig"
+      right: "Block/rsblock.html.twig"
+      topnav: "Block/topnavblock.html.twig"
+      search: "Block/searchblock.html.twig"
 dizkus:
   pattern: ZikulaDizkusModule
-  page: ":norightcolumn.html.twig"
+  page: "norightcolumn.html.twig"
   block:
     positions:
-      left: "Block:lsblock.html.twig"
+      left: "Block/lsblock.html.twig"
